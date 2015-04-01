@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SharpNoty</id>
+    <version>$version$</version>
+    <title>SharpNoty</title>
+    <authors>Mason McGlothlin</authors>
+    <owners>Mason McGlothlin</owners>
+    <projectUrl>https://github.com/mason-mcglothlin/SharpNoty</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# wrapper around noty to make it easier to create notifications from ASP.NET server side code.</description>
+    <releaseNotes></releaseNotes>
+    <tags>noty notification</tags>
+  </metadata>
+  <files>
+	<file src="SharpNoty\bin\$configuration$\SharpNoty.dll" target="lib\net40\" />
+  </files>
+</package>
