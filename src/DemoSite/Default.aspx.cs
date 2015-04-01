@@ -17,7 +17,7 @@ namespace DemoSite
 		protected void CreateNoty_Click(object sender, EventArgs e)
 			{
 			var noty = new Noty("Hello, world!", MessageType.success);
-			ClientScript.RegisterStartupScript(this.GetType(), Guid.NewGuid().ToString(), noty.GenerateNotyJs(), true);
+			Page.AddNoty(noty);
 			}
 
 		protected void CreateNestedNoty_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace DemoSite
 			var noBtn = new NotyButton("No", "$noty.close();"+noNoty.GenerateNotyJs(), "btn btn-danger");
 			top.Buttons.Add(yesBtn);
 			top.Buttons.Add(noBtn);
-			ClientScript.RegisterStartupScript(this.GetType(), Guid.NewGuid().ToString(), top.GenerateNotyJs(), true);
+			Page.AddNoty(top);
 			}
 		}
 	}

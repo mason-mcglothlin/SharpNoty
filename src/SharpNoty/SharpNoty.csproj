@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Noty.cs" />
     <Compile Include="NotyButton.cs" />
+    <Compile Include="PageExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
