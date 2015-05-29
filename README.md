@@ -7,6 +7,11 @@ SharpNoty is a set of helper classes to generate [noty](http://ned.im/noty/) not
 A beautiful noty notification can be created with this simple C# code in the code behind.
 
     Page.AddNoty(new Noty("Failed to save data.", NotyType.alert));
+    
+# Getting Started
+Your page will need a reference to the noty library. Although it's available as a [NuGet package](https://www.nuget.org/packages/jquery.noty/), I reccomend you use the `jquery.noty.packaged.min.js` file [hosted on Cloud Flare](http://cdnjs.com/libraries/jquery-noty).
+
+The extension methods for SharpNoty are in the `SharpNoty.PageExtensions` namespace.
 
 # Currently supported features
 - Can create a basic noty with one of the noty message types in any supported noty location on the screen
